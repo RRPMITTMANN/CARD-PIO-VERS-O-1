@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍔 Cardápio Hamburgueria</h1>
+        
+        <h2>🍔 Hambúrgueres</h2>
+        <div class="menu-items" id="burgers"></div>
+
+        <h2>🥤 Bebidas</h2>
+        <div class="menu-items" id="drinks"></div>
+        
+        <div class="cart-container">
+            <h2>🛒 Carrinho</h2>
+            <ul id="cartItems"></ul>
+            <p><strong>Total:</strong> <span id="cartTotal">R$ 0,00</span></p>
+
+            <h3>💳 Forma de Pagamento</h3>
+            <select id="paymentMethod">
+                <option value="pix">Pix</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="credito">Cartão de Crédito</option>
+            </select>
+
+            <h3>📍 Endereço de Entrega</h3>
+            <input type="text" id="customerName" placeholder="Nome Completo">
+            <input type="text" id="customerAddress" placeholder="Endereço Completo">
+
+            <button id="finalizeOrder">✅ Finalizar Pedido</button>
+            <button id="clearCart">🗑 Limpar Carrinho</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
